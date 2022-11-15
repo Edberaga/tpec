@@ -1,0 +1,120 @@
+.review {
+    background: #fff;
+    padding: 3rem 2rem;
+    margin: 2rem 15px;
+    border-radius: 10px;
+    box-shadow: var(--lightShadow);
+    transition: var(--fastTrans);
+    text-align: center;
+    z-index: -1;
+}
+
+.review:hover {
+    box-shadow: var(--darkShadow);
+}
+  
+.review-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -10vh;
+    margin-bottom: 1.5rem;
+}
+
+.review-img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+}
+
+.review-container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    position: absolute;
+    top: -0.25rem;
+    right: -0.5rem;
+    border-radius: 50%;
+}
+  
+.author {
+    margin-bottom: 0.25rem;
+    color: var(--primary-color);
+    font-family: var(--quoteFont);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.review-info {
+    margin-bottom: 0.75rem;
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+/*React Carousel Style*/
+/* square buttons */
+.rec.rec-arrow {
+    border-radius: 0;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    line-height: 0;
+}
+  /* round buttons on hover */
+  .rec.rec-arrow:hover {
+    border-radius: 50%;
+    color: var(--primary-color);
+  }
+
+
+  /* hide disabled buttons */
+  .rec.rec-arrow:disabled {
+    visibility: hidden;
+  }
+
+  /* disable default outline on focused items */
+  /* add custom outline on focused items */
+  .rec-carousel-item:focus {
+    outline: none;
+    box-shadow: inset 0 0 1px 1px lightgrey;
+  }
+
+  button.rec-dot{
+    background-color: var(--primary-color);
+    box-shadow: 0 0 1px 3px rgba(0, 147, 103, 0.35);
+  }
+
+  button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
+    background-color: var(--primary-color);
+    box-shadow: 0 0 1px 3px rgba(0, 147, 103, 0.35);
+}
+
+/*add custom carousel dots color*/
+@media screen and (max-width: 900px) {
+    button.rec-dot{
+        background-color: gray;
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .rec.rec-arrow {
+        font-size: 16px;
+        width: 30px;
+        min-width: 30px;
+        height: 30px;
+        line-height: 0;
+        margin: 0 10px;
+    }
+
+    .review {
+        margin: 2rem 0;
+        margin-bottom: 0;
+    }
+}

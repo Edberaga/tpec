@@ -1,0 +1,7 @@
+.paymentOption{
+    padding: 10px;
+    border-radius: 0;
+    color: #fff;
+    background-color: var(--primary-option);
+    font-size: 20px;
+}

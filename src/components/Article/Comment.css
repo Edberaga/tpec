@@ -1,0 +1,29 @@
+.comment-container{padding: 5px 10px; margin: 10px 0 15px 0;}
+
+.comment-user, .comment-currentUser {
+    font-family: var(--primaryFont);
+    font-size: 18px;
+}
+
+.comment-user{color: var(--primary-color);}
+.comment-currentUser{color: var(--second-color);}
+
+.comment-content{font-size: 16px;}
+
+.comment-bar{display: flex;}
+
+.comment-delete, .comment-edit, .separate, .comment-date{font-size: 14px; font-family: var(--secondFont);}
+.comment-delete, .comment-edit, .comment-date{margin: 0; font-weight: 600;}
+.separate{margin: 0 5px;}
+.comment-date{margin-left: auto; color: rgba(0, 0, 0, 0.65);}
+
+@media screen and (max-width: 900px) {
+    .comment-content{font-size: 15px;}
+    .comment-delete, .comment-edit, .separate, .comment-date{font-size: 12.5px;}
+}
+
+@media screen and (max-width: 500px) {
+    .comment-user, .comment-currentUser {font-size: 16px;}
+    .comment-content{font-size: 14px;}
+    .comment-delete, .comment-edit, .separate, .comment-date{font-size: 12px;}
+}

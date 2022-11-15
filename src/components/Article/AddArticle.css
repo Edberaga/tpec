@@ -1,0 +1,44 @@
+.add-article-form{
+    margin: 5vh auto;
+    padding: 15px;
+    width: 80%;
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: var(--lightShadow);
+    z-index: 2px;
+}
+
+.add-article-form label{
+    font-family: var(--secondFont);
+    font-weight: 600;
+    opacity: 0.65;
+    letter-spacing: 0.75px;
+}
+
+.form-control, .add-button{
+    width: 100%; 
+    margin: 5px 0; 
+    padding: 10px 5px;
+    font-size: 14px;
+}
+
+.add-button{
+    background-color: var(--second-color);
+    color: white;
+    border-radius: 0px;
+}
+
+/*
+.form-textarea{
+    resize: none;
+    overflow: hidden;
+}
+*/
+
+button.form-control {color: white;}
+
+button.form-control:hover{background-color: var(--second-color);}
+
+@media screen and (max-width: 500px) {
+    .add-article-form{ margin: 0; width: 100%;}
+}

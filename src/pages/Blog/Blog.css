@@ -1,0 +1,16 @@
+.container-article{
+    width: 80%;
+    padding: 5vh 0;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 900px) {
+    .container-article{width: 100%; justify-content: flex-start;}
+}
+
+@media screen and (max-width: 500px) {
+    .container-article{justify-content: center;}
+}

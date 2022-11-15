@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Lato:wght@300&family=Rubik:wght@500&display=swap');
+/*Global CSS color */
+:root {
+  --primary-color: #009368;
+  --second-color: #eca30c;
+  --bg-color: rgba(224, 245, 143, 0.4);
+  --primaryFont: 'Rubik', sans-serif;
+  --secondFont: 'Lato', sans-serif;
+  --quoteFont: 'Edu VIC WA NT Beginner', cursive;
+
+  --fastTrans: 0.16s ease-in;
+  --mediumTrans: 0.32s ease-in;
+  --longTrans: 0.66s ease-in;
+  --lightShadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --darkShadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-family: var(--secondFont);
+  font-weight: 900;
+  line-height: 2em; 
+  font-size: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a{
+  text-decoration: none;
+  color: black;
+  transition: var(--fastTrans);
+}
+
+body{
+  background-color: rgb(245, 252, 250);
+}
+
+button {
+  border: 0;
+  border-radius: 25px;
+  background-color: transparent;
+  transition: 0.22s ease-in;
+}
+
+button a{
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #fff;
+  border: 0;
+  border-radius: 25px;
+
   display: flex;
-  flex-direction: column;
   align-items: center;
+  transition: var(--mediumTrans);
+}
+
+.container-section, .container-section-full, .container-heading{
+  padding: 5vh 0;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 80%;
+}
+
+.container-heading{
+  background-color: var(--primary-color); 
+  padding: 10vh 0;
   color: white;
+  font-family: var(--quoteFont);
 }
 
-.App-link {
-  color: #61dafb;
+.container-section-full, .container-heading{width: 100%;}
+
+.section{padding: 15px;} .section-center{display: flex; justify-content: center;}
+
+span {margin: 0 12px;}
+.marked {color: var(--second-color); margin: 0;}
+
+/*To fix bootstrap*/
+dl, ol, ul, p {
+  padding-left: 0;
+  margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover{
+  color: inherit;
+}
+
+@media screen and (max-width: 900px) {
+  .container-section{width: 100%; }
+}
+
+@media screen and (max-width: 500px) {
+  .container-section{padding: 2em 12px;}
 }

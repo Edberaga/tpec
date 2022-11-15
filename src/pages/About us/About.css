@@ -1,0 +1,9 @@
+.about-mission-1, .about-mission-2, .about-history-1, .about-history-2 {flex:1; min-width: 300px; padding: 10px;}
+.about-mission-img, .about-history-img{width: 100%; padding: 15px; min-width: 500px;}
+.about-mission h1, .about-history h1 {font-size: xx-large; margin: 10px 0;}
+.about-mission h1, .about-history p { margin: 12px 0;}
+
+@media screen and (max-width: 500px) {
+    .about-mission-img, .about-history-img{min-width: 300px;}
+    .about-mission h1, .about-history h1 {text-align: center;}
+}

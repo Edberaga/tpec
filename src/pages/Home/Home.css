@@ -1,0 +1,200 @@
+/*=========== BANNER CSS ============*/
+.feature-one, .feature-two {background-color: rgb(237, 242, 232);}
+.banner{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.68)), url(../../assets/img/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 120vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    color: #fff;
+}
+
+.banner-title{font-size: 5vw;font-weight: 300;transition: 0.5s;}
+
+.banner-quote{
+    margin-top: 10px;
+    font-family: var(--quoteFont);
+    font-size: 2vw;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.35em;
+    transition: 0.5s;
+}
+
+.banner-title:hover, .banner-quote:hover{opacity: 0.35;}
+
+.banner-quote span{margin: 0;}
+.banner-quote-1{color: var(--second-color);} .banner-quote-2{color: var(--primary-color);}
+
+.banner-btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-top: 25px;
+}
+
+.btn-volunteer-now svg{font-size: 22px;} .btn-learn-more svg{font-size: 27px;}
+.btn-learn-more, .btn-volunteer-now{margin: 25px; margin-top: 0;}
+
+.btn-volunteer-now {border: 1px solid var(--primary-color);} .btn-learn-more {border: 1px solid var(--second-color);}
+.btn-volunteer-now:hover {background-color: var(--primary-color); transform: scale(1.05);} 
+.btn-learn-more:hover {background-color: var(--second-color); transform: scale(1.05);}
+
+/*=========== FEATURE ONE CSS ============*/
+
+.icon-col {
+    width: 100px; 
+    transition: 0.3s; 
+    margin-right: 15px; padding: 20px;
+    background-position: center; background-size: contain; background-repeat: no-repeat;
+}
+
+.icon-col:hover {transform: scale(1.05); margin: 5px 15px 10px 0;}
+
+.section-one{
+    width: fit-content;
+    background-color: #fff;
+    padding: 3% 2%;
+    margin-top: -24vh;
+    border-radius: 10px;
+    display: flex; justify-content: space-around; align-items: center; flex-flow: wrap;
+}
+
+.feature-col{display: flex; flex-flow: column; width: 350px; margin: 15px;}
+.first-col{display: flex;align-items: center;}
+.col-title{font-size: 22px; line-height: 1.25em;}
+
+.red-col {background-image: url('../../assets/img/three_iocn_box_bg.png');}
+.blue-col {background-image: url('../../assets/img/three_iocn_box_bg-2.png'); padding: 27.5px;}
+.green-col {background-image: url('../../assets/img/three_iocn_box_bg-3.png'); padding: 25px;}
+
+/*=========== FEATURE TWO CSS ============*/
+.feature-two{padding-bottom: 10vh;}
+.section-image{
+    border-radius: 10px;     
+    width: auto;
+    height: 40vh;
+}
+
+.section-image{box-shadow: -15px 15px 0 0 var(--primary-color);}
+.section-img, .section-word{flex: 1;}
+.section-img{width: auto;}
+
+.section-word h1{font-size: 42px;} 
+.section-word h2{font-family: var(--quoteFont); color: var(--primary-color);}
+
+/*=========== FEATURE THREE CSS ============*/
+.container-three{width: 100%; background-color: var(--primary-color); display: flex; justify-content: center; margin-bottom: 0;}
+.feature-three{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section3-video h2{font-family: var(--quoteFont); color: rgb(227, 238, 236); text-align: center; padding: 10px 0;}
+.section3-video, .section3-word {flex: 1;}
+.section-video{width: auto;}
+.section3-word{color: #fff;} .section3-word h1 {font-size: 42px;}
+
+.feature-three .btn-learn-more a{color: var(--second-color);}
+.feature-three .btn-learn-more a:hover{color: white}
+.feature-three .btn-learn-more, .feature-three .btn-volunteer-now{border-radius: 0;}
+.feature-three .btn-learn-more svg, .feature-three .btn-volunteer-now svg {font-size: 15px;}
+.feature-three .btn-volunteer-now{ border-color: white; background-color: transparent;} 
+.feature-three .btn-volunteer-now a{border-radius: 0;} .feature-three .btn-volunteer-now:hover{border-color: transparent;}
+.feature-three .btn-volunteer-now a:hover{
+    background-color: white; 
+    color: black;
+    border-radius: 0;
+}
+
+/*=========== FEATURE FOUR CSS ============*/
+.section-question, .section4-image{flex: 1;}
+
+/*=========== FEATURE FIVE CSS ============*/
+.feature-five .container-section{width: 100%;}
+.feature-five .section-word, .feature-six .section-word{text-align: center;}
+.review-carousel{padding: 15px;}
+
+/*=========== FEATURE SIX CSS ============*/
+.feature-six .container-section{width: 100%; background-color: var(--primary-color); display: flex; justify-content: center; margin-bottom: 0;}
+.feature-six .section-word h2{
+    font-family: var(--secondFont); 
+    color: rgb(227, 238, 236); 
+    text-align: center; 
+    padding: 10px 0; 
+    font-weight: 600;
+    font-size: 28px;
+}
+.btn-join a{ 
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
+    transition: var(--fastTrans);
+}
+
+.btn-join a:hover{box-shadow: 0 5px 5px rgba(0, 0, 0, 1); transform: scale(1.015);}
+
+/*=========== FEATURE SEVEN CSS ============*/
+.first-container .section-word, .first-container .section-desc{flex: 1; min-width: 300px;}
+.first-container{padding-bottom: 30vh; background-color: var(--bg-color);}
+.second-container .container-section{margin-top: -35vh; width: 100%;}
+
+@media screen and (max-width: 900px) {
+    .section-one{width: 80%;} .feature-col{width: 280px;}
+    .section-img, .section-word{flex: 1;}
+    .banner{height: 75vh; padding: 10px;}
+    .banner-title{font-size: 7.5vw;} 
+
+    /*=========== FEATURE TWO CSS ============*/
+    .section-word h1{font-size: 3vw;}
+    .section-img{ text-align: center;}
+    .section-image{ height: 30vh;}
+
+    /*=========== FEATURE THREE CSS ============*/
+    .feature-three{width: 100%; padding: 0; justify-content: center;}
+    .section3-word h1{font-size: 30px;}
+    .section3-video{max-width: 420px}
+
+    .section3-word .btn-learn-more, .section3-word .btn-volunteer-now{margin: 10px 0.75vw;}
+    .section3-word .btn-learn-more a, .section3-word .btn-volunteer-now a{padding: 10px 8px; font-size: 15px;}
+
+    /*=========== FEATURE SEVEN CSS ============*/
+    .first-container{padding-bottom: 25vh;}
+    .news-card{max-width: 300px;}
+    
+}
+@media screen and (max-width: 540px) {
+    .banner{height: 50vh; padding: 10px;}
+    .banner-quote{font-size: 3.5vw;}
+    .section-one{margin-top: -12vh;} 
+    
+    /*=========== FEATURE TWO CSS ============*/
+    .feature-two .section-word{margin: 15px 0;}
+    .section-word h1, .section3-word{font-size: 7vw;}
+    .section-image, .section-img-bg{ text-align: center;}
+
+    .btn-volunteer-now svg{font-size: 3.5vw;} .btn-learn-more svg{font-size: 4.5vw;}
+    .btn-learn-more a, .btn-volunteer-now a{font-size: 2.5vw;}
+
+    /*=========== FEATURE THREE CSS ============*/
+    .feature-three{width: 100%;}
+
+    .section3-video{max-width: 400px}
+    .section3-word .btn-learn-more, .section3-word .btn-volunteer-now{margin: 10px;}
+    .section3-word .btn-learn-more a, .section3-word .btn-volunteer-now a{padding: 10px 12px; font-size: 16px;}
+
+    .review-carousel{padding: 5px;}
+
+    /*=========== FEATURE SEVEN CSS ============*/
+    .first-container{padding-bottom: 20vh;}
+    .second-container .container-section{margin-top: -30vh;}
+    
+}

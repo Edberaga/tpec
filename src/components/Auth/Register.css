@@ -1,0 +1,2 @@
+.register-link{transition: var(--fastTrans);}
+.register-link:hover{color: var(--primary-color);}

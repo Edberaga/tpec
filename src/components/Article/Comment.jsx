@@ -68,21 +68,13 @@ export default function Comment({ id }) {
 
                         <div className="row">
                             <p className='comment-bar'>
-                            {currentUser && currentUser.uid === user ? (
+                            {currentUser.uid === user || currentUser.uid === 'wXdT70ui90WaxRTvGBBJcVXZCnp2' ? (
                             <>
                                 <span
                                     className='comment-delete' 
                                     style={{cursor:"pointer", color:"red"}} 
                                     onClick={() => deleteComment({commentId, user, comment, userName, createAt})}>
                                     Delete
-                                </span> 
-                                <span className='separate'>|</span>
-                                <span
-                                    className='comment-edit'
-                                    style={{cursor:"pointer", color:"var(--primary-color)"}} 
-                                    //onClick={() => editComment(comment)}>
-                                    >
-                                    Edit
                                 </span>
                             </>
                             ) : ('')}

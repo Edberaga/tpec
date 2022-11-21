@@ -5,3 +5,7 @@
     background-color: var(--primary-option);
     font-size: 20px;
 }
+
+.amount-label{
+    padding: 10px 15px;
+}

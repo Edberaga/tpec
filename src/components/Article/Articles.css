@@ -3,7 +3,7 @@
     background-color: #fff;
     margin: 10px;
     box-shadow: var(--lightShadow);
-    width: 25vw;
+    width: 30%;
     height: 100%;
     border-radius: 10px;
     overflow: hidden;
@@ -20,7 +20,18 @@
 }
 
 .news-word, .news-media{padding: 15px 12px;}
-.news-content {font-size: 15px; min-height: 100px; vertical-align: top;}
+/*Add Elipsis to the Article content*/
+.news-word p, .news-word h1{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.news-word h1{-webkit-line-clamp: 1;}
+.news-word p {-webkit-line-clamp: 3;}
+
+.news-content {font-size: 15px; vertical-align: top;}
 .news-word h1{
     line-height: 1.5em; 
     color: var(--primary-color); 
@@ -62,9 +73,9 @@
 .news-admin-control{margin: 10px 12px;}
 
 @media screen and (max-width: 900px) {
-    .news-card{min-width: 45vw; margin: 15px;}
+    .news-card{min-width: 45%; margin: 15px;}
 }
 
 @media screen and (max-width: 500px) {
-    .news-card{min-width: 90vw; }
+    .news-card{min-width: 90%; }
 }

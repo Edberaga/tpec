@@ -99,7 +99,7 @@
 
 .section3-video h2{font-family: var(--quoteFont); color: rgb(227, 238, 236); text-align: center; padding: 10px 0;}
 .section3-video, .section3-word {flex: 1;}
-.section-video{width: auto;}
+.section-video{min-width: 300px;}
 .section3-word{color: #fff;} .section3-word h1 {font-size: 42px;}
 
 .feature-three .btn-learn-more a{color: var(--second-color);}

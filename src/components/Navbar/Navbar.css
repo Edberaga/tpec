@@ -156,6 +156,16 @@
   transition: 350ms;
 }
 
+/******NOTEBOOK RESPONSIVE******/
+@media screen and (max-width: 1280px){
+  .nav-text a, .nav-donate a:hover{
+    font-size: 14px;
+    padding: 0 12px;
+  }
+  .nav-text a:hover, .nav-donate a:hover{font-size: 16px;}
+  .nav-user-display p{font-size: 14px;}
+}
+
 /******TABLET RESPONSIVE******/
 @media screen and (max-width: 900px){
   .nav-links-destkop {
@@ -296,6 +306,11 @@
 
   .nav-user{
     display: none;
+  }
+
+  .nav-user-display{
+    color: var(--second-color);
+    padding: 0 15px;
   }
 
   .nav-button {

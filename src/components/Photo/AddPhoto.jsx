@@ -6,7 +6,6 @@ import { db, storage } from '../../config/firebase';
 export default function AddPhoto() {
     const [uploadData, setUploadData] = useState({
         title: "",
-        content: "",
         image: "",
         photoDate: Timestamp.now().toDate()
     });
@@ -22,7 +21,7 @@ export default function AddPhoto() {
     };
 
     const handleUpload = () => {
-        if(!uploadData.title || !uploadData.content || !uploadData.image){
+        if(!uploadData.title || !uploadData.image){
             alert('Please fill all the fields!');
             return;
         }
@@ -44,7 +43,6 @@ export default function AddPhoto() {
             () => {
                 setUploadData({
                     title: "",
-                    content: "",
                     image: "",
                 });
 
@@ -52,11 +50,9 @@ export default function AddPhoto() {
                     const galleryRef = collection(db, "Photos");
                     addDoc(galleryRef, {
                         photoTitle: uploadData.title,
-                        photoDesc: uploadData.content,
                         photoUrl: url,
                         photoDate: Timestamp.now().toDate(),
-                        photoLikes: [],
-                        photoComment: []
+                        photoLikes: []
                     })
                     .then(() => {
                         alert('Succesfully upload new Image!');
@@ -82,16 +78,6 @@ export default function AddPhoto() {
           name='title' 
           className='form-control' 
           value={uploadData.title} 
-          onChange={(e)=>uploadImageContent(e)}
-        />
-
-        {/*Content*/}
-        <label htmlFor="">Photo Description</label>
-        <textarea 
-          name='content' 
-          className='form-control form-textarea' 
-          style={{height: 200}} 
-          value={uploadData.content} 
           onChange={(e)=>uploadImageContent(e)}
         />
 

@@ -121,12 +121,24 @@ function Navbar() {
             </li>
             {/*Sign UP button for phone */}
             <li className='nav-button'>
+            {user ? (
+                <div className='nav-user-display'>
+                  <p className="pe-4">
+                    Hi, {user.displayName}
+                  </p>
+                  <button className="btn btn-primary btn-sm me-3"
+                    onClick={()=>{signOut(auth)}}
+                    >Logout
+                  </button>
+                </div>
+              ) : (
               <button className="mobile-nav-user">
-                  <Link to='/signup'>
-                    <FaUserCircle className='mobile-nav-user-icon'/>
-                    <span>Sign Up</span>
-                  </Link>
-                </button>
+                <Link to='/signup'>
+                  <FaUserCircle className='mobile-nav-user-icon'/>
+                  <span>Sign Up</span>
+                </Link>
+              </button>
+              )}
             </li>
           </ul>
         </nav>

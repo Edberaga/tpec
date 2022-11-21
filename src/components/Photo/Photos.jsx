@@ -39,11 +39,6 @@ export default function Photos() {
                         {photoDate.toDate().toDateString()}
                     </p>
                     <div className='photo-media'>
-                        <Link >
-                            <p className="photo-comment">
-                                <span>{photoComment?.length}</span> comment
-                            </p>
-                        </Link>
                         {/* For delete photo button*/
                         user && user.uid === 'wXdT70ui90WaxRTvGBBJcVXZCnp2' ?  (
                             <div className="news-admin-control">

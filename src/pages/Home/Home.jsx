@@ -1,7 +1,7 @@
 import React from "react";
 import './Home.css';
 import './Review/ReviewCard.css';
-import {FaHandsHelping, FaHeart} from 'react-icons/fa'
+import {FaHandsHelping} from 'react-icons/fa'
 import {MdReadMore} from 'react-icons/md'
 import {BsSuitHeartFill} from 'react-icons/bs'
 import { Link } from "react-router-dom";
@@ -9,11 +9,11 @@ import { Link } from "react-router-dom";
 import Quote from "../../common.json";
 import ReactPlayer from "react-player";
 import Carousel from 'react-elastic-carousel';
+import Articles from "../../components/Article/Articles";
 
 import { HomeData } from "./HomeData";
 import { ReviewData } from "./Review/ReviewData";
 import 'font-awesome/css/font-awesome.min.css';
-import Blog1img from '../../assets/img/blog-1.jpg';
 
 let factor = 32; // to make react player to be responsive
 
@@ -181,69 +181,7 @@ export const Home = () => {
 
                 <section className="second-container">
                     <div className="container-section">
-                        <Link>             
-                            <div className="news-card">
-                                <div className="news-image" style={{backgroundImage: `url(${Blog1img})`} }>
-                                </div>
-                                <div className="news-word">
-                                    <p className="news-date">21/9/2020</p>
-                                    <h1>Welcome to the T-PEC Blog!</h1>
-                                    <p>This is the start of a bulletin that will include important information 
-                                        about current events at T-PEC, updates on future activity, as well as student blogs!
-                                    </p>
-                                </div>
-                                <div className="news-media">
-                                    <p className="news-comment">
-                                        <span>0</span> comments
-                                    </p>
-                                    <p className="news-like">
-                                        <FaHeart/> <span>0</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link>             
-                            <div className="news-card">
-                                <div className="news-image" style={{backgroundImage: `url(${Blog1img})`} }>
-                                </div>
-                                <div className="news-word">
-                                    <p className="news-date">21/9/2020</p>
-                                    <h1>Welcome to the T-PEC Blog!</h1>
-                                    <p>This is the start of a bulletin that will include important information 
-                                        about current events at T-PEC, updates on future activity, as well as student blogs!
-                                    </p>
-                                </div>
-                                <div className="news-media">
-                                    <p className="news-comment">
-                                        <span>0</span> comments
-                                    </p>
-                                    <p className="news-like">
-                                        <FaHeart/> <span>0</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </Link>
-                        <Link>             
-                            <div className="news-card">
-                                <div className="news-image" style={{backgroundImage: `url(${Blog1img})`} }>
-                                </div>
-                                <div className="news-word">
-                                    <p className="news-date">21/9/2020</p>
-                                    <h1>Welcome to the T-PEC Blog!</h1>
-                                    <p>This is the start of a bulletin that will include important information 
-                                        about current events at T-PEC, updates on future activity, as well as student blogs!
-                                    </p>
-                                </div>
-                                <div className="news-media">
-                                    <p className="news-comment">
-                                        <span>0</span> comments
-                                    </p>
-                                    <p className="news-like">
-                                        <FaHeart/> <span>0</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </Link>
+                        <Articles/>
                     </div>
                 </section>
             </section>

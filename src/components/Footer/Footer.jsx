@@ -5,6 +5,7 @@ import Quote from '../../common.json'
 import { FooterData } from './FooterData'
 import { ContactData } from './FooterData'
 import { BsSuitHeartFill } from 'react-icons/bs'
+import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaYoutube } from 'react-icons/fa'
 
 export const Footer = () =>{
   return (
@@ -14,6 +15,12 @@ export const Footer = () =>{
               <img src={require('../../assets/img/logo.jpeg')} alt="TPEC logo" className='nav-logo'/>
             </Link>
             <p>{Quote['footer-summary']}</p>
+            <div className="media-col">
+              <span className='fb-col media-part'><a target="_blank" rel="noreferrer" href='https://www.facebook.com/ThePeaceEduCentre'><FaFacebookSquare/></a></span>
+              <span className='tw-col media-part'><a target="_blank" rel="noreferrer" href='https://twitter.com/?lang=en-my'><FaTwitterSquare/></a></span>
+              <span className='in-col media-part'><a target="_blank" rel="noreferrer" href='https://www.instagram.com/'><FaInstagramSquare/></a></span>
+              <span className='yt-col media-part'><a target="_blank" rel="noreferrer"  href='https://www.youtube.com/channel/UC8CWQ1cMNgVyU6OUxzEycrQ'><FaYoutube/></a></span>
+            </div>
         </div>
 
         <div className="footer-col">

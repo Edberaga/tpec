@@ -14,8 +14,17 @@ footer{
     margin: 10px;
 }
 
+.media-part a{color: white;}
+.media-part svg{width: 30px; height: 30px; transition: var(--fastTrans);}
+.media-part svg:hover{transform: scale(1.1);}
 
-.footer-col p{font-size: 15px; }
+.fb-col svg:hover{fill: #4267B2;}
+.tw-col svg:hover{fill: #1DA1F2;}
+.in-col svg:hover{fill: #C13584;}
+.yt-col svg:hover{fill: #FF0000;}
+
+.footer-col p{font-size: 15px;}
+
 
 .footer-nav-menu{
     padding: 10px 0;

@@ -7,7 +7,7 @@
 }
 .single-photo{
     width: 20%;
-    height: 220px;
+    height: 200px;
     box-shadow: var(--lightshadow);
     padding: 5px;
 }
@@ -41,12 +41,10 @@
 
 .photo-media {
     display: flex;
-    justify-content: space-between;
-    align-self: flex-end;
-    width: 100%;
+    justify-content: flex-end;
 }
 
-.photo-media span{font-size: 18px; margin: 0 5px;}
+.photo-media span{font-size: 16px; margin: 0 5px;}
 .photo-comment{
     color: #fff;
     font-size: 14px; 
@@ -60,11 +58,16 @@
 
 .photo-comment:hover{color: var(--primary-color);}
 
+@media screen and (max-width: 1280px) {
+    .single-photo{
+        width: 25%;
+        box-shadow: var(--lightshadow);
+    }
+}
 @media screen and (max-width: 900px) {
     .single-photo{
         width: 33.33%;
         height: 220px;
-        box-shadow: var(--lightshadow);
     }
 }
 
@@ -72,7 +75,6 @@
     .single-photo{
         width: 50%;
         height: 275px;
-        box-shadow: var(--lightshadow);
     }
 }
 

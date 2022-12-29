@@ -4,14 +4,14 @@
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 @media screen and (max-width: 1280px) {
     .container-article{width: 95%;}
 }
 @media screen and (max-width: 900px) {
-    .container-article{width: 100%; justify-content: flex-start;}
+    .container-article{width: 100%;}
 }
 
 @media screen and (max-width: 500px) {
